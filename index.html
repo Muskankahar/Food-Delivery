@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Grocery Website Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11.0.7/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> foodzy</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#review">Review</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="cart-img-1.png" alt="">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="cart-img-2.png" alt="">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="cart-img-3.png" alt="">
+                <div class="content">
+                    <h3>chicken</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : $19.69/-</div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <form action="logi.php" method="post" class="login-form">
+            <h3>Log in now</h3>
+            <input type="email" name="email" placeholder="Enter email" class="box">
+            <input type="password" name="password" placeholder="Enter password" class="box">
+            <p>Forget your password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Create now</a></p>
+            <input type="submit" value="Login now" class="btn">
+        </form>
+        
+    </header>
+    <!-- header section end -->
+
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Be The Fastest In  <span>Delivering</span> Your Food</h3>
+            <p>Serving You delicious food items,crafted with the healthiest ingridents and plenty of love.</p>
+            <a href="#" class="btn home-btn">shop now</a>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- Features section stards -->
+    <section class="features" id="features">
+        <h1 class="heading">our <span>features</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="feature-img-2.png" alt="">
+                <h3>free delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos consequatur natus!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="feature-img-3.png" alt="">
+                <h3>easy payments</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos consequatur natus!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features section ends -->
+
+    <!-- product section stards -->
+    <section class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/236x/74/51/a3/7451a39ec60744f6f8a81265627dc354.jpg" alt="">
+                    <h3>pao bhaji</h3>
+                    <div class="price">
+                        ₹65.00 - 100.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="pao.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/236x/76/f2/37/76f237a8e512593dd5184a7072d046ea.jpg" alt="">
+                    <h3>Crispy Masala Dosa</h3>
+                    <div class="price">
+                        ₹70.00 - 100.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="dosa.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/564x/4e/f2/67/4ef2677218fccd7f834db72064d84984.jpg" alt="">
+                    <h3>Chhole bhature</h3>
+                    <div class="price">
+                        ₹60.00- 100.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="chhole.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/236x/12/13/8c/12138cb49482998d016bc57140a37ce1.jpg" alt="">
+                    <h3>Makhani Sauce Pasta</h3>
+                    <div class="price">
+                        ₹50.00 - 100.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="pasta.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/564x/c8/4d/1e/c84d1e202914a5b04b648c9f528d27b9.jpg" alt="">
+                    <h3>Cheese burger</h3>
+                    <div class="price">
+                        ₹80.00 - 120.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="burger.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/236x/4a/19/9b/4a199bd8d261c129d0b222b417aeb2a2.jpg" alt="">
+                    <h3>samosa </h3>
+                    <div class="price">
+                        ₹20.00 - 40.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="samosa.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/236x/aa/17/64/aa176482ece3093e0dbaf81f55115473.jpg" alt="">
+                    <h3>Idli Sambar</h3>
+                    <div class="price">
+                        ₹40.00 - 80.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="idli.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/236x/fa/eb/74/faeb74269582f19e56242c832ae78faa.jpg" alt="">
+                    <h3>Chessy Pizza</h3>
+                    <div class="price">
+                        ₹120.00 - 200.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="piza.html" class="btn">Order now</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/236x/a0/62/b7/a062b7046e8d291c9417a99e777cb121.jpg" alt="">
+                    <h3>Noodles</h3>
+                    <div class="price">
+                        ₹50.00 - 80.00/-
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="noodles.html" class="btn">Order now</a>
+                </div>
+            </div>
+
+
+
+            <div class="swiper product-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/236x/3a/9a/9c/3a9a9c590fff7d3f4ef68e5ece7585df.jpg" alt="">
+                        <h3>Egg Biryani</h3>
+                        <div class="price">
+                            ₹70.00 - 140.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/564x/31/a0/b8/31a0b8a98eeeb090727e261358dc7223.jpg" alt="">
+                        <h3>Chicken Biryani</h3>
+                        <div class="price">
+                            ₹70.00 - 130.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="" class="btn">Order now</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/236x/7f/3f/dc/7f3fdcd238dd7d8fdebab15ab7bf6892.jpg" alt="">
+                        <h3>Chicken Tikka</h3>
+                        <div class="price">
+                            ₹220.00 - 400.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/564x/85/bc/bb/85bcbb63fd552ee2ac8739a47b4dc6fb.jpg" alt="">
+                        <h3>Fry Fish</h3>
+                        <div class="price">
+                            ₹150.00 - 300.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/236x/99/d6/91/99d691623fe22181e245f05cfc6dcdf2.jpg" alt="">
+                        <h3>Mutton Curry</h3>
+                        <div class="price">
+                            ₹180.00 - 250.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/236x/68/5c/14/685c14c823f361e2daf0f5ec7848f136.jpg" alt="">
+                        <h3>egg roll</h3>
+                        <div class="price">
+                            ₹50.00 - 100.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/564x/a5/60/66/a56066d31873da92c36808f3103a88f5.jpg" alt="">
+                        <h3>Chicken Curry</h3>
+                        <div class="price">
+                            ₹120.00 - 180.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="https://i.pinimg.com/236x/52/12/17/52121793821f30303f65754ac783f6d2.jpg" alt="">
+                        <h3>Chicken Mince Kebab</h3>
+                        <div class="price">
+                            ₹120.00 - 200.00/-
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="#" class="btn">Order now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- product section ends -->
+
+
+    <!-- Categories section starts -->
+    <section class="categories" id="categories">
+        <h1 class="heading">product<span>categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://i.pinimg.com/236x/6d/87/9d/6d879dd31e93c511790dcb68eb440a88.jpg" alt="">
+                <h3>categories veg </h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="https://i.pinimg.com/564x/7e/6b/df/7e6bdfc83286e7ab29bb6720e90085f5.jpg" alt="">
+                <h3>categories Non-veg</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Categories section ends -->
+
+
+    <!-- Review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">customer's<span>review</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="pic-1.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, odio fuga minima
+                        perspiciatis quidem possimus unde aliquid libero eius repellendus.</p>
+                    <h3>Jack</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="pic-2.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, odio fuga minima
+                        perspiciatis quidem possimus unde aliquid libero eius repellendus.</p>
+                    <h3>john deo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="pic-3.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, odio fuga minima
+                        perspiciatis quidem possimus unde aliquid libero eius repellendus.</p>
+                    <h3>Michael</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="pic-4.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, odio fuga minima
+                        perspiciatis quidem possimus unde aliquid libero eius repellendus.</p>
+                    <h3>Amelia</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Review section ends -->
+
+
+    <!-- blogs section stards -->
+    
+    <!-- blogs section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> <i class="fas fa-shopping-basket"></i> foodzy </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsum.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +91-8817252293 </a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +91-7725093771 </a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>gautamkapse@gamil.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> betul - 460001</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> features </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> products </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> categories </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> review </a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> blogs </a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="payment.png" class="payment-img" alt="">
+            </div>
+        </div>
+
+        <div class="credit">
+            created by <span>Gautam kapse</span>| all right reserved
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
